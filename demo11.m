@@ -120,4 +120,3 @@ salmaps(:,:,1) = SRPriorBayes(:,:,1);
 salmaps(:,:,2) = PCAPriorBayes(:,:,1);
 saliency = combineSalMap(salmaps, '+');
 imwrite(saliency,strcat(imName(1:end-4),'_DSR.bmp'));
-toc;
